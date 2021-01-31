@@ -1,2 +1,3 @@
-<p>contacts-upload works!</p>
-<app-upload-file (fileEvent)="fileEvent($event)" ></app-upload-file>
+<p>Subir vcf de contactos</p>
+<app-upload-file (fileEvent)="fileEvent($event)" extension=".vcf"></app-upload-file>
+<button mat-raised-button color="accent" (click)="uploadFile()" [disabled]="file == null">Subir fichero</button>
