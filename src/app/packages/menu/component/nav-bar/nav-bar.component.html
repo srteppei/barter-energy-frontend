@@ -2,5 +2,5 @@
   <mat-icon>menu</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>Subir contactos</button>
+  <button mat-menu-item (click)="navigate('/contacts-upload')">Subir contactos</button>
 </mat-menu>
