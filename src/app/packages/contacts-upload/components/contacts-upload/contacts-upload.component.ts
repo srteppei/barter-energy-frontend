@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contacts-upload',
   templateUrl: './contacts-upload.component.html',
   styleUrls: ['./contacts-upload.component.scss']
 })
-export class ContactsUploadComponent implements OnInit {
+export class ContactsUploadComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  fileEvent(file: File) {
+    console.log(file);
   }
 
 }
