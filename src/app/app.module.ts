@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuModule } from './packages/menu/menu.module';
+import { ContactsUploadModule } from './packages/contacts-upload/contacts-upload.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuModule } from './packages/menu/menu.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MenuModule
+    MenuModule,
+    ContactsUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
